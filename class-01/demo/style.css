@@ -1,0 +1,21 @@
+body {
+    background: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background: #111;
+    color: #eee;
+    height: 300px;
+    width: 20%;
+}
+
+@media (max-width:900px) {
+    body {
+        background: red;
+    }
+    div {
+        float: left;
+        margin-left: 10px;
+    }
+}
