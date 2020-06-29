@@ -1,0 +1,22 @@
+body {
+  background: #ccc;
+}
+
+li {
+  font-size: 1.5em;
+}
+
+ul { 
+  visibility: visible; 
+}
+
+/* 
+ul.on {
+  visibility: visible;
+} */
+
+
+/* li.person-template {
+  display:none;
+} */
+
