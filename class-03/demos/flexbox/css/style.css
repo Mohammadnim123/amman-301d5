@@ -1,0 +1,64 @@
+* {
+  box-sizing:border-box; 
+}
+
+body {
+  display:flex;
+  flex-direction: column;
+}
+
+body > header, body > footer {
+  background: #444;
+  color: #eee;
+  height: 70px;
+  line-height: 70px;
+}
+
+/* header {
+  order: 2;
+}
+footer {
+  order:1;
+}
+main {
+  order:3;
+} */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.card header {
+  order:1;
+}
+.card p {
+  order:3;
+}
+.card img{
+  order:2;
+}
+.card .links {
+  order:4;
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row-reverse; */
+}
+
+.primary{
+  order:2;
+  background: blue;
+  color: #eee;
+  padding:5px;
+
+}
+.secondary {
+  order:1;
+}
+
+.deck {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
