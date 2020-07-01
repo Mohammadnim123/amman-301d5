@@ -1,0 +1,29 @@
+@media(min-width: 960px) {
+
+    main {
+        height: calc(100% - 140px); /*100%*/;
+    }
+
+    main > .content {
+        height: 100%;
+    }
+
+    main > nav {
+        float: left;
+        height: 100%;
+        width: 250px;
+    }
+
+    main > aside {
+        float: right;
+        height: 100%;
+        width: 250px;
+    }
+
+    .deck {
+        height: 50%;
+    }
+
+    
+
+}

@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body > * {
+    border: 1px solid #000;
+}
+
+body>header, body>footer {
+    background: #444;
+    color: #eee; 
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+main {
+    background: #fafafa;
+}
+
+main > .content {
+    background: #000;
+}
+
+main > aside {
+    background: #9c9000;
+}
+
+main > nav {
+    background: #ff0000;
+}
+
+.deck {
+    background-color: #0FA0CF;
+}
+
+.centeredWords {
+    text-align: center;
+}
+
+.deck:first-child {
+    border-bottom: 1px solid black;
+}
