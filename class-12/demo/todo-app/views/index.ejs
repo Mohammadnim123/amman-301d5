@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>To-Do List</title>
+</head>
+
+
+<body>
+
+  <header>
+    <%- include('layouts/header'); %>
+  </header>
+
+  <main>
+    <section>
+      <ul>
+        <% results.forEach(task =>{ %>
+          <li>
+            <h4>Task Title: <%=task.title%></h4>
+            <p>Task Status: <%=task.status%></p>
+            <a href="/tasks/<%=task.id%>">View Full Details</a>
+            
+          </li>
+        <% }); %>
+      </ul>
+    </section>
+  </main>
+
+</body>
+
+</html>

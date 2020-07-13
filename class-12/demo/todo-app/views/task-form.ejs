@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>To-Do List</title>
+</head>
+
+
+<body>
+
+  <header>
+    <%- include('layouts/header'); %>
+    <!-- <h1>My To-Do List</h1>
+    <nav class="navigation">
+      <ul>
+        <li><a href="/">View All Tasks</a></li>
+        <li><a href="/showTaskForm">Add a New Task</a></li>
+      </ul>
+    </nav> -->
+  </header>
+
+  <main>
+    <section>
+     <h1>My Task Form</h1>
+     <form action="/addTask" method="post">
+        <fieldset>
+            <input type="text" name='title' placeholder="Task title">
+            <textarea type="text" name='description' placeholder="Task Description" cols="40" rows="20"></textarea>
+            <input type="text" name='contact' placeholder="Task contact">
+            <input type="text" name='status' placeholder="Task status">
+            <input type="text" name='category' placeholder="Task category">
+            <button type="submit">Add Task</button>
+        </fieldset>
+    </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
